@@ -1,0 +1,66 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraph-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --bg-h-button-very-light-gray: hsl(0, 0%, 95%);
+}
+
+@font-face {
+    font-family: "LexendDeca";
+    src: url("../assets/fonts/LexendDeca-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "BigShouldersDisplay";
+    src: url("../assets/fonts/BigShouldersDisplay-Bold.ttf") format('truetype');
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container__ind {
+    padding: 4em 4em 2.5em 4em;
+}
+
+.sedans-container {
+    background-color: var(--bright-orange);
+}
+
+.suvs-container {
+    background-color: var(--dark-cyan);
+}
+
+.luxury-container {
+    background-color: var(--very-dark-cyan);
+}
+
+.container__h2 {
+    font-family: 'BigShouldersDisplay';
+    color: var(--bg-h-button-very-light-gray);
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.container__p {
+    font-family: 'LexendDeca';
+    color: var(--paragraph-transparent-white);
+}
+
+.container__button {
+    font-family: 'LexendDeca';
+    padding: 1em;
+    color: var(--bg-h-button-very-light-gray);
+    border-radius: 5em;
+    background-color: transparent;
+    border: 2px solid var(--bg-h-button-very-light-gray);
+    margin-top: 5em;
+}
+
+.container__button:hover {
+    cursor: pointer;
+}
